@@ -1,0 +1,61 @@
+<!-- LM: 06-18-12 -->
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Skycable Scraper</title>  
+  <link rel="stylesheet" href="css/main.css">
+</head>
+<body>
+
+<!-- PAGE 'menu_list_page' -->
+<!-- ===================================================== -->
+<section id="menu_list_page" class="page hide">
+	<header>
+		<h1>Menu</h1>
+	</header>
+	<div class="content">
+		<ul id="menu_list" class="listview">
+			<li><button id="refresh_data">Start Scraping!</button></li>
+			<li><button id="more_data">More Data</button></li>
+			<li><button id="retry_failed_schedules">Retry all failed sched</button></li>
+		</ul>
+	</div>
+	<footer>&copy; Rafael Gandionco</footer>
+</section>
+<!-- ===================================================== -->
+
+<!-- PAGE 'log_list_page' -->
+<!-- ===================================================== -->
+<section id="log_list_page" class="page">
+	<header>
+		<h1>Skycable Scraping</h1>
+	</header>
+	<div class="content">
+		<button data-href="#menu_list_page">Menu</button>
+		<textarea id="log_textarea"></textarea>
+		<br>
+		<h3>Result</h3>
+		<textarea id="log_result"></textarea>
+	</div>
+	<footer>&copy; Rafael Gandionco</footer>
+</section>
+<!-- ===================================================== -->
+
+
+<!-- <script src="assets/js/phonegap-desktop.js"></script> -->
+<script src="js/zepto.min.js"></script>
+<script src="js/app.js"></script> 
+<script>
+	Zepto(document).on('DOMContentLoaded', function () {
+		var z = Zepto;
+		Skycable.init();
+		Skycable.root.on('log_list_page', function () {
+			//z('#log_textarea').val(''); //Clear log textarea
+		});
+	});
+</script>
+
+</body>
+</html>
