@@ -63,9 +63,7 @@ function array_unique(a){var b="",c={},d="",e=function(a,b){var c="";for(c in b)
 		'STAR SPORTS':32,
 		'STAR WORLD':48,
 		'TLC':120,
-		'VELVET':53,
-		'ZOE TV':161,
-		'UNIVERSAL CHANNEL':21
+		'VELVET':53
 	};
 	
 	var Ui = {				
