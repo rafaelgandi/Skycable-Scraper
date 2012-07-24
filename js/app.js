@@ -56,13 +56,11 @@ function array_unique(a){var b="",c={},d="",e=function(a,b){var c="";for(c in b)
 		'KIX':63,
 		'LIFESTYLE NETWORK':52,
 		'MAX':36,
-		'MTV ASIA':71,
 		'MYX':23,
 		'SOLAR SPORTS':70,
 		'STAR MOVIES':55,
 		'STAR SPORTS':32,
 		'STAR WORLD':48,
-		'TLC':120,
 		'VELVET':53
 	};
 	
