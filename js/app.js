@@ -28,7 +28,8 @@ function array_unique(a){var b="",c={},d="",e=function(a,b){var c="";for(c in b)
 	_t = z.trim; // shroten trim method
 	
 	var _CONFIG = {
-		SCRAPER: 'http://rafaelgandi.phpfogapp.com/scraper/skycable.php',
+		//SCRAPER: 'http://rafaelgandi.phpfogapp.com/scraper/skycable.php',
+		SCRAPER: 'http://fbpage.xpresstools.com/fbxpresstools/skycable.php',
 		NUM_OF_MONTHS: 12,
 		NUM_OF_DAYS: 31,		
 		STORED_DATA_KEY: 'skycable'
